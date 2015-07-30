@@ -44,17 +44,31 @@ textarea {
 	box-sizing: border-box;
 	width: 100%;
 }
-/* Here I'll define some styles that give the contact page a fixed width at certain screen sizes */
+.wrapper {
+	width: 100%;
+}
+figure {
+	text-align: center;
+}
 @media (min-width: 520px) {
-	.body-content {
+	input,
+	textarea {
 		max-width: 400px;
-		margin-left: auto;
-		margin-right: auto;
+		padding: 10px;
+	}
+	h1 {
+		padding: 20px;
 	}
 }
 @media (min-width: 768px) {
-	.body-content {
-		max-width: 700px;
+	.wrapper {
+		width: 600px;
+		margin: 0 auto;
+	}
+	figure {
+		width: 200px;
+		float: left;
+		margin: 0 0 20px;
 	}
 }
 @media (min-width: 1200px) {
